@@ -1,3 +1,465 @@
-!<!DOCTYPE html>
-<doctype 
-!!
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>smart education</title>
+    <link rel="icon" type="image/x-icon" href="eduford_img/logo.png">
+   <!------ <link rel="stylesheet" href="style.css">---->
+    <script src="https://kit.fontawesome.com/9c0bea8e01.js" crossorigin="anonymous"></script>
+
+    <style>
+        *
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+.header
+{
+   width: 100%;
+   height: 100vh;
+   background: linear-gradient(rgba(0, 0, 0, 0.733),rgba(0, 0, 0, 0.733)),url('../eduford_img/banner.png');
+   background-position: center;
+   background-size: cover;
+   
+   
+}
+.logo{
+    padding: 3%;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 6%;
+    align-items: center;
+
+
+}
+
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+}
+.nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: aliceblue;
+    padding: 5px 5px;
+    border-radius: 5px;
+
+}
+.nav ul li a:hover{
+    background-color: aqua;
+    box-shadow: 12px 10px 10px black;
+   color: black;
+    transition: 1s;
+    
+}
+.content h1{
+    text-align: center;
+    color: red;
+    font-size: 60px;
+}
+.content{
+    width: 100%;
+  color: #fff;
+  text-align: center;
+  margin-top: 100px;
+
+}
+.content p{
+    color: white;
+    text-align: center;
+    margin: 30px;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 30px;
+
+}
+.btn{
+    display: inline-block;
+    padding: 13px 50px;
+    color: white;
+    cursor: pointer;
+    font-family:  serif;
+    background: transparent;
+    border:1px solid #fff;
+    position: relative;
+    font-size: 30px;
+   border-radius: 10px;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: aqua;
+    border: 1px solid aqua;
+    box-shadow: 5px 5px 5px black;
+    color: black;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+.content p::first-letter{
+font-size:40px;
+color: red;
+}
+
+
+
+.course{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+ .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 30%;
+    background: #fff3ff;
+    padding: 10px;
+    margin: 20px;
+
+}
+.course-col:hover{
+box-shadow:0px 0px 25px #000;
+position: relative;
+bottom: 5px;
+transition: 1s;
+left: 3px;
+}
+::selection{
+    color: white;
+background-color: red;
+}
+.icon{
+    font-size: 60px;
+}
+.campus{
+    margin: 50px;
+    }
+   .text{
+        text-align: center;
+    }
+.myimage {
+    margin: auto;
+    display: flex;
+    width: 100%;
+    padding: 50px 100px ;
+}
+.campus .campus_image{
+    height: 400px;
+    display: flex;
+    text-align: center;
+    padding: 0px 30px;
+    
+}
+.campus_image:hover{
+    box-shadow:0px 0px 25px #000;
+position: relative;
+bottom: 5px;
+left: 3px;
+transition: 0.5s;
+
+}
+.col img{
+    width: 400px;
+    height: 300px;
+    margin: 0px 20px;
+    padding: 0px 30px;
+    transition: 1s;
+}
+.col img:hover{
+    box-shadow: 0px 0px 25px black;
+    position: relative;
+    bottom: 5px;
+    left: 3px;
+}
+.facility{
+    text-align: center;
+    padding: 20px 20px;
+}
+.facilities{
+    margin-top: 100px;
+}
+h3{
+    font-size: 30px;
+}
+.testimonial{
+    margin: 100px 0px;
+}
+.col-5{
+    background-color: #fff3ff;
+    border-radius: 25px;
+    width: 45%;
+    margin: 0px 100px;
+}
+.col-5:hover{
+    box-shadow: 0px 0px 25px black;
+    transition: 1s;
+    position: relative;
+    bottom: 5px;
+    left: 3px;
+}
+.col-5 img{
+    height: 50px;
+    align-items: flex-start;
+    border-radius: 100%;
+    margin-top:10px;
+    margin-left:12px ;
+}
+.col-7 p{
+    text-align: left;
+    margin-left: 20p;
+    padding: 0px 10px;
+}
+.col-7 h4{
+    text-align: left;
+    margin:5px 10px;
+    font-size: 30px;
+}
+.connect{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(/eduford_img/banner2.jpg);
+    width: 85%;
+    height: 500px;
+    margin: auto;
+    padding-top:150px;
+}
+.connect-text{
+    text-align: center;
+    line-height: 80px;
+}
+
+.connect h2{
+    text-align: center;
+    color: #fff;
+    font-size: 60px;
+}
+.about-us {
+    text-align: center;
+    margin: 100px;
+}
+.about-us p {
+    font-size: 15px;
+}
+.about-icon i{
+    color: red;
+    font-size: 25px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+@media(max-width:700px){
+    .content{
+        margin-top: 260px;
+    }
+    .content h1{
+        text-align: center;
+        font-size: 40px;
+        margin-top: 500px;
+    }
+    .content p{
+        text-align: center;
+        margin: 30px;
+        font-size: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        
+    
+    }
+    .header{
+        width: 100%;
+        height: auto;
+    }
+    .btn{
+        margin-bottom: 50px;
+    }
+}
+    </style>
+
+</head>
+
+<body>
+    <section class="header">
+        <div class="nav">
+            <div class="logo">
+                <img src="../eduford_img/logo.png" alt="logo">
+
+            </div>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#feedback">feedback</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>India's biggest online educational website </h1>
+            <p>Making website is now one of the easiest thing in the world.You just need to learn HTML, CSS, <br> and
+                you are good to go.</p>
+            <a href="#" class="btn">Visit Us To Know More</a>
+        </div>
+    </section>
+
+
+    <section class="course">
+        <h1>Course we offer</h1>
+        <p>we have to many course which is differently offered to the studets we have</p>
+        <div class="row">
+            <div class="course-col">
+                <h1>Itnermediate</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nostrum et delectus optio natus facere
+                    incidunt minus unde! Tempora ullam optio culpa laudantium minus odio quam, veritatis similique
+                    impedit neque.</p>
+            </div>
+            <div class="course-col">
+                <h1>Degree</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nostrum et delectus optio natus facere
+                    incidunt minus unde! Tempora ullam optio culpa laudantium minus odio quam, veritatis similique
+                    impedit neque.</p>
+            </div>
+            <div class="course-col">
+                <h1>Post Graduation</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nostrum et delectus optio natus facere
+                    incidunt minus unde! Tempora ullam optio culpa laudantium minus odio quam, veritatis similique
+                    impedit neque.</p>
+            </div>
+        </div>
+    </section>
+    </section>
+    <section class="campus">
+        <div class="text">
+            <h1>Our Global Campus</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem corrupti non sequi commodi culpa labore
+                suscipit temporibus adipisci, repellendus dignissimos omnis molestiae.</p>
+        </div>
+        <div class="myimage">
+            <div class="campus_image">
+                <img src="eduford_img/london.png">
+            </div>
+            <div class="campus_image">
+                <img src="eduford_img/newyork.png">
+            </div>
+            <div class="campus_image">
+                <img src="eduford_img/washington.png">
+            </div>
+        </div>
+    </section>
+    <section class="facilities">
+        <div class="text">
+            <h1>Our Facilities</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem corrupti non sequi commodi culpa labore
+                suscipit temporibus adipisci, repellendus dignissimos omnis molestiae.</p>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <img src="eduford_img/library.png">
+                    <div class="facility">
+                        <h3>Library</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore labore fugit eius quidem?
+                            Odit optio omnis facere nulla? Qui, eos!</p>
+
+                    </div>
+
+                </div>
+                <div class="col"><img src="eduford_img/basketball.png">
+                    <div class="facility">
+                        <h3>Basketball</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore labore fugit eius quidem?
+                            Odit optio omnis facere nulla? Qui, eos!</p>
+                    </div>
+
+                </div>
+                <div class="col"><img src="eduford_img/cafeteria.png">
+                    <div class="facility">
+                        <h3>Cafeteria</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore labore fugit eius quidem?
+                            Odit optio omnis facere nulla? Qui, eos!</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonial" id="feedback">
+        <div class="text">
+            <h1>What Our Student Says</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nihil hic eos enim quam sunt.</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="eduford_img/user1.jpg">
+                            </div>
+                            <div class="col-7">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor quod quisquam eum
+                                    earum obcaecati sapiente soluta placeat pariatur error sit! Lorem ipsum dolor sit
+                                    amet consectetur adipisicing elit. Corrupti reiciendis deleniti aliquam error. Quo
+                                    deleniti tenetur facere aliquam, nisi debitis.</p>
+                                    <h4>lioni singh</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="eduford_img/user2.jpg">
+                            </div>
+                            <div class="col-7">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti reiciendis deleniti
+                                    aliquam error. Quo deleniti tenetur facere aliquam, nisi debitis.Lorem ipsum dolor
+                                    sit amet consectetur adipisicing elit. Corrupti reiciendis deleniti aliquam error.
+                                    Quo deleniti tenetur facere aliquam, nisi debitis.</p>
+                                    <h4>himmat singh</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <section class="enroll">
+        <div class="connect">
+            <div class="connect-text">
+            <h2>Enroll For Our Various Online Courses Anywhere from The World</h2>
+            <button type="button" class="btn btn-outline-dark">CONTACT US</button>
+        </div>
+</div>
+    </section>
+    <section class="about-us">
+        <h1>About Us</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi libero sapiente quod <br>praesentium, perspiciatis id nobis incidunt hic adipisci.
+        </p>
+        <div class="about-icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>MADE BY MAYRO</p>
+    </section>
+
+
+</body>
+
+</html>
